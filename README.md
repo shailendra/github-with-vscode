@@ -39,22 +39,27 @@ if you initialse project locally using git init  then do not click on checkbox, 
 
 ### Cloning a repository in VSCode
 - Open Visual Studio Code and click on the Source Control tab (the icon looks like a split in the road) in the left-side panel:
-- Click on `Clone Repository`<br><br>
+- Click on `Clone Repository`<br>
 ![alt](images/source-control.jpg)<br>
 - Here you have to provide repository path
 ![alt](images/repo-url.jpg)<br>
 You can also open above dialog box using the **Git: Clone** command in the Command Palette `(Ctrl+Shift+P)`
 - After `Pres Enter Key` file browser window will open. Provide locaton to clone repository.
 - After Cloned repository on given loation. Make changes in file or add any new file.<br>
-![alt](images/after-change.png)<br>
+![alt](images/after-change.png)
+
 - Now you’ll see in the Source Control panel that your new file shows up with the letter `U` beside it. `U` stands for untracked file, meaning a file that is new or changed, but has not yet been added to the repository:
 - To commit your changes, type a commit message into the input box at the top of the Source Control panel. Then, click the check icon to perform the commit<br>
-![alt](images/commit.png)<br>
-- Now All commited changes are on local repository. To upload on github repository.
+![alt](images/commit.png)
 
-Enabling authentication through GitHub happens when you run any Git action in VS Code that requires GitHub authentication, such as pushing to a repository that you're a member of or cloning a private repository. You don't need to have any special extensions installed for authentication; it is built into VS Code so that you can efficiently manage your repository.
+- Now All commited changes are on local repository. To upload on github repository, Click on push.<br>
+![alt](images/push.jpg)
 
-When you do something that requires GitHub authentication, you'll see a prompt to sign in:
+- Now you will see a prompt to sign in. VS Code requires GitHub authentication first time.<br>
+![alt](images/auth-prompt.png)<br>
+
+- Follow the steps to sign into GitHub and return to VS Code. After doing so, all local repository will upload on github repository. You must be owner or contributor of that repository.
+
 
 <br><br><br><br><br><br><br><br><br><br>
 
