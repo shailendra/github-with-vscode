@@ -4,12 +4,12 @@
 - How to use Git Integration in Visual Studio Code
 https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code
 - Github Readme Emoji cheat sheet
-https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#warning
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 - Working with GitHub in VS Code
 https://code.visualstudio.com/docs/editor/github
+<br><br><br><br>
 
-
-### Install Git your machine
+### Install Git on your machine
 Go to the following website: https://git-scm.com/download.  Download file and install on your machine. 
 After installed git, open command prompt and type ` git `, it will display information about git.
 <br><br><br>
@@ -41,21 +41,42 @@ if you initialse project locally using git init  then do not click on checkbox, 
 - Open Visual Studio Code and click on the Source Control tab (the icon looks like a split in the road) in the left-side panel:
 - Click on `Clone Repository`<br><br>
 ![alt](images/source-control.jpg)<br>
-- Here you have provide repository path
+- Here you have to provide repository path
 ![alt](images/repo-url.jpg)<br>
 You can also open above dialog box using the **Git: Clone** command in the Command Palette `(Ctrl+Shift+P)`
-<br><br><br><br><br>
+- After `Pres Enter Key` file browser window will open. Provide locaton to clone repository.
+- 
+<br><br><br><br><br><br><br><br><br><br>
 
 
 ## README.md Markdown Code
 Github Readme Emoji cheat sheet<br>
-https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#warning
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
  
-`highlight`
+`code or highlight`
 - unorder list
 - unorder list
+1. first
+2. second
+3. third
 
 **Bold Text**
 <br>
 
-![alt](images/image.jpg)
+![alt](images/source-control-icon.png)
+
+[Link to text ](https://github.com/shailendra/github-with-vscode)
+<br>
+*Italic text*
+> Quote
+<br>
+# Heading
+## Heading
+### Heading
+#### Heading
+<br>
+horizontal rule
+
+----------
+
+
