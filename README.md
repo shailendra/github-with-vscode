@@ -46,6 +46,7 @@ if you initialse project locally using git init  then do not click on checkbox, 
 You can also open above dialog box using the **Git: Clone** command in the Command Palette `(Ctrl+Shift+P)`
 - After `Pres Enter Key` file browser window will open. Provide locaton to clone repository.
 - 
+![alt](images/after-changes.png)
 <br><br><br><br><br><br><br><br><br><br>
 
 
