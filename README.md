@@ -10,8 +10,7 @@ https://code.visualstudio.com/docs/editor/github
 <br><br><br><br>
 
 ### Install Git on your machine
-Go to the following website: https://git-scm.com/download.  Download file and install on your machine. 
-After installed git, open command prompt and type ` git `, it will display information about git.
+Go to the following website: https://git-scm.com/download.  Download file and install on your machine. After installed git, open command prompt and type ` git `, it will display information about git.
 <br><br><br>
 
 ### Configure Username and Email in Git
@@ -31,9 +30,9 @@ git config --global user.email "user@gmail.com"
 
 - Give name to repository 
 <br><br>
-![alt](images/create-repo-info.jpg)<br>
+![alt](images/create-repo-info.jpg) <br>
 check box **“Initialize this repository with a README”**
-if you initialse project locally using git init  then do not click on checkbox, it should be unselect.
+if you initialize project locally using git init  then do not click on checkbox, it should be unselect.
 <br><br><br><br>
 
 
@@ -44,15 +43,15 @@ if you initialse project locally using git init  then do not click on checkbox, 
 - Here you have to provide repository path
 ![alt](images/repo-url.jpg)<br>
 You can also open above dialog box using the **Git: Clone** command in the Command Palette `(Ctrl+Shift+P)`
-- After `Pres Enter Key` file browser window will open. Provide locaton to clone repository.
-- After Cloned repository on given loation. Make changes in file or add any new file.<br>
+- After `Pres Enter Key` file browser window will open. Provide location to clone repository.
+- After Cloned repository on given location. Make changes in file or add any new file.<br>
 ![alt](images/after-change.png)
 
 - Now you’ll see in the Source Control panel that your new file shows up with the letter `U` beside it. `U` stands for untracked file, meaning a file that is new or changed, but has not yet been added to the repository:
 - To commit your changes, type a commit message into the input box at the top of the Source Control panel. Then, click the check icon to perform the commit<br>
 ![alt](images/commit.jpg)
 
-- Now All commited changes are on local repository. To upload on github repository, Click on push.<br>
+- Now All committed changes are on local repository. To upload on github repository, Click on push.<br>
 ![alt](images/push.jpg)
 
 - Now you will see a prompt to sign in. VS Code requires GitHub authentication first time.<br>
@@ -69,9 +68,9 @@ follow below steps to upload an existing VSCode Project in github
 - Goto VS Code and open project/folder
 - check git is enabled from settings
 - **Initialise Repository** <br>
-Click on Source Control icon and Initialise Repository.<br>
+Click on Source Control icon and Initialize Repository.<br>
 ![alt](images/initialise-project.jpg)<br>
-You can also Initialise using the **Git: Initialize Repository** command in the Command Palette `(Ctrl+Shift+P)`
+You can also Initialize using the **Git: Initialize Repository** command in the Command Palette `(Ctrl+Shift+P)`
 ![alt](images/initialise-project-command.jpg) <br>
 then select or choose project location.<br>
 ![alt](images/workspace-path.jpg)
@@ -94,7 +93,7 @@ Give Remote name<br>
 
 
 ## Timeline / History
-In Timeline you can see commit history of specific file. Select file, then click Timeline Tab. You can see commit hostory against selected file. Click on any commit to see difference<br>
+In Timeline you can see commit history of specific file. Select file, then click Timeline Tab. You can see commit history against selected file. Click on any commit to see difference<br>
 ![alt](images/timeline.jpg)
 
 
@@ -127,6 +126,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 ## Heading
 
 ### Heading
+
 #### Heading
 
 horizontal rule
