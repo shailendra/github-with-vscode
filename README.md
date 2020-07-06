@@ -90,6 +90,13 @@ Give Remote name<br>
 ![alt](images/push.jpg)
 - Check changes on github repo
 
+<br><br><br><br>
+
+
+## Timeline / History
+In Timeline you can see commit history of specific file. Select file, then click Timeline Tab. You can see commit hostory against selected file. Click on any commit to see difference<br>
+![alt](images/timeline.jpg)
+
 
 
 <br><br><br><br><br><br><br><br><br><br>
@@ -114,11 +121,14 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 [Link to text ](https://github.com/shailendra/github-with-vscode)
 <br>
 *Italic text
-<br>
+
+# Heading
+
+## Heading
+
 ### Heading
-<br>
 #### Heading
-<br>
+
 horizontal rule
 
 ----------
