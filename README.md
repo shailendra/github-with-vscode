@@ -1,12 +1,16 @@
 # github-with-vscode
 
 ### Reference links
-- How to use Git Integration in Visual Studio Code
+- How to use Git Integration in Visual Studio Code<br>
 https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code
-- Github Readme Emoji cheat sheet
+- Github Readme Emoji cheat sheet<br>
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
-- Working with GitHub in VS Code
+- Working with GitHub in VS Code<br>
 https://code.visualstudio.com/docs/editor/github
+- Book<br>
+https://git-scm.com/book
+
+
 <br><br><br><br>
 
 ### Install Git on your machine
@@ -18,6 +22,10 @@ Open CMD and type below command to configure username and email on current syste
 ```cmd
 git config --global user.name "username"
 git config --global user.email "user@gmail.com"
+```
+To list global config
+```cmd
+git config --global --list
 ```
 <br><br>
 
@@ -36,7 +44,7 @@ if you initialize project locally using git init  then do not click on checkbox,
 <br><br><br><br>
 
 
-## Cloning a repository in VSCode
+# Cloning a repository in VSCode
 - Open Visual Studio Code and click on the Source Control tab (the icon looks like a split in the road) in the left-side panel:
 - Click on `Clone Repository`<br>
 ![alt](images/source-control.jpg)<br>
@@ -62,7 +70,7 @@ You can also open above dialog box using the **Git: Clone** command in the Comma
 <br><br><br><br>
 
 
-## Upload an existing VSCode Project in github
+# Upload an existing VSCode Project in github
 follow below steps to upload an existing VSCode Project in github
 - Create a repository on github & copy url
 - Goto VS Code and open project/folder
@@ -91,12 +99,42 @@ Give Remote name<br>
 
 <br><br><br><br>
 
+# Track or Untrack and Status
+Remember that each file in your working directory can be in one of two states: **tracked** or **untracked**. Tracked files are files that were track by git; they can be **unmodified**, **modified**, or **staged**. In short, tracked files are files that Git knows about.<br>
+When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.<br>
+![alt](images/track-untrack.jpg)<br>
+You can check status in two way.
+1. Click on Source Control icon. In left side panel every file status will indicate with `U`, `M` and `A`.
+2. Type `git status` in terminal and will display status.
 
-## Timeline / History
+![alt](images/status.jpg)
+
+
+<br><br><br><br>
+
+
+
+
+# Commit Timeline / History
 In Timeline you can see commit history of specific file. Select file, then click Timeline Tab. You can see commit history against selected file. Click on any commit to see difference<br>
 ![alt](images/timeline.jpg)
 
+<br><br><br><br>
 
+# Restore / Revert
+### Restore/Revert Specific file
+If you accidentally committed a bad version of a file and need to restore from a back version of commit. First look require file in back commit.
+1. Select file.
+2. Select Timeline Tab
+3. Check commit history for correct file. `Right Click` and select `Copy Commit ID`.
+![alt](images/timeline-restore.jpg)<br>
+you can also view commit id from Command Prompt by `git log --oneline`<br>
+
+Now type `checkout` command with `Commit Id` and `Filename with Relative path` in Command Prompt <br>
+```CMD
+git checkout commitId filename
+git checkout 8046891 images/source-control.jpg
+```
 
 <br><br><br><br><br><br><br><br><br><br>
 
