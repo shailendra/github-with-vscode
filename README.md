@@ -13,6 +13,11 @@ https://git-scm.com/book
 
 <br><br><br><br>
 
+### Install Git Extension in VSCode
+- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - Install Git History extension in VSCode. This extension help to View git log, file history, compare branches or commits
+
+<br><br><br><br>
+
 ### Install Git on your machine
 Go to the following website: https://git-scm.com/download.  Download file and install on your machine. After installed git, open command prompt and type ` git `, it will display information about git.
 <br><br><br>
@@ -115,9 +120,16 @@ You can check status in two way.
 
 
 
-# Commit Timeline / History
+# Timeline
 In Timeline you can see commit history of specific file. Select file, then click Timeline Tab. You can see commit history against selected file. Click on any commit to see difference<br>
 ![alt](images/timeline.jpg)
+
+
+<br><br><br><br>
+# Viewing the Commit History
+After several commits, or cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened. To view Commit History open Command Palette using `(Ctrl+Shift+P)` and type **Git: View History (git log)**. You'll see Commit History and search the history, View a previous copy of the file, View the history of one or all branches (git log)<br>
+![alt](images/gitLogv3.gif)<br>
+
 
 <br><br><br><br>
 
@@ -128,7 +140,7 @@ If you accidentally committed a bad version of a file and need to restore from a
 2. Select Timeline Tab
 3. Check commit history for correct file. `Right Click` and select `Copy Commit ID`.
 ![alt](images/timeline-restore.jpg)<br>
-you can also view commit id from Command Prompt by `git log --oneline`<br>
+you can also view commit id by typing `git log --oneline` in Command Prompt<br>
 
 Now type `checkout` command with `Commit Id` and `Filename with Relative path` in Command Prompt <br>
 ```CMD
