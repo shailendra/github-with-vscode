@@ -9,6 +9,10 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 https://code.visualstudio.com/docs/editor/github
 - Book<br>
 https://git-scm.com/book
+- Documentation<br>
+https://git-scm.com/docs
+- Other<br>
+https://www.atlassian.com/git
 
 
 <br><br><br><br>
@@ -126,7 +130,7 @@ In Timeline you can see commit history of specific file. Select file, then click
 
 
 <br><br><br><br>
-# Viewing the Commit History
+# Viewing the Commit History - git log
 After several commits, or cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened. To view Commit History open Command Palette using `(Ctrl+Shift+P)` and type **Git: View History (git log)**. You'll see Commit History and search the history, View a previous copy of the file, View the history of one or all branches (git log)<br>
 ![alt](images/gitLogv3.gif)<br>
 
@@ -149,6 +153,61 @@ git checkout 8046891 images/source-control.jpg
 ```
 
 <br><br><br><br><br><br><br><br><br><br>
+
+
+
+## gitignore
+https://git-scm.com/docs/gitignore<br>
+https://www.atlassian.com/git/tutorials/saving-changes/gitignore<br>
+A gitignore file specifies untracked files that Git should ignore. `Files already tracked by Git are not affected.` If you want to untrack existing file then delete that file and add that file name in .gitignore file and again add file in folder.<br>
+.gitignore file is placed in the root folder of the repository. However, you can put it in any folder in the repository and you can also have multiple .gitignore files.
+
+Each line in a gitignore file specifies a pattern. 
+- A line starting with # serves as a **comment**<br>
+`# Add your comments` 
+- **Folder name start with #** then add blackslash `\` before folder name<br>
+`\#foldername`
+- **Literal File Names.**<br>
+`team.html` - apply to all team.html from root and subfolder.
+`/team.html` - apply to team.html only from root.
+- **Folder Names.**<br>
+`node_modules/` - If you leave the slash off of the end, it will match both files and directories with that name.<br>
+`assets/` - apply to all folder in repository.<br>
+`/assets/` - apply to only root folder in repository.
+- An **asterisk `*`** will ignore all files.
+- specific **extension**<br>
+`*.png`<br>
+`*.log`
+- Apply all **Wildcard** `*` and `?` rule.<br>
+`debug?.log`
+-  **Two consecutive asterisks \*\*** in patterns matched against full pathname may have special meaning.<br>
+**\*\*/foo** &nbsp; matches file or directory &nbsp; **foo** &nbsp; anywhere, the same as pattern &nbsp; **foo**.<br>
+ **\**/foo/bar** &nbsp; matches file or directory &nbsp; **bar** &nbsp; anywhere that is directly under directory &nbsp; **foo**.<br>
+ **abc/\*\*** &nbsp; matches all files inside directory &nbsp; **abc** &nbsp; with infinite depth<br>
+ **a/\*\*/b** &nbsp; matches &nbsp; **a/b**,&nbsp;&nbsp; **a/x/b**,&nbsp; **a/x/y/b** and so on.
+
+- **Square brackets** can also be used to match a single character from a specified range.<br>
+`debug[0-9].log`<br>
+pattern will apply to following files -- *debug**0**.log, debug**1**.log*<br>
+will not apply to following files -- *debug**10**.log, debug**11**.log*<br><br>
+Match a single character form the specified set<br>
+`debug[02].log`<br>
+pattern will apply to following files -- *debug**0**.log, debug**2**.log*<br>
+will not apply to following files -- *debug**1**.log, debug**3**.log*<br><br>
+Ranges can be numeric or alphabetic<br>
+`debug[a-z].log`<br>
+pattern will apply to following files -- *debug**b**.log, debug**c**.log*<br>
+will not apply to following files -- *debug**1**.log, debug**3**.log*
+- An optional **prefix " ! "** which negates the pattern;<br>
+`*.html` -- apply to all html files<br>
+`!team.html` -- not apply to *team.html* file<br><br>
+`*.html` -- apply to all html files<br>
+`!team.html` -- not apply to *team.html* file<br>
+`team.html` -- again apply to *team.html* file
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
 
 
 ## README.md Markdown Code
